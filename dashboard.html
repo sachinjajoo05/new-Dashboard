@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sidebar.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <div class="sidebar-header"><img src="assets/images/logo.png" alt="logo" /></div>
+          <ul class="list-group">
+            <li>
+                <a href="dashboard.html" class="list-group-item active">
+                    <span class="sidebar-list-icon home-icon" style="background-image: url(assets/images/home-gray.png);"></span> Dashboard
+                </a>
+            </li>
+            <li>
+                <div class="dropdown show">
+                    <a class="list-group-item dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sidebar-list-icon company-icon" style="background-image: url(assets/images/company-gray.png);"></span> Company Profile 
+                        <span class="down-arrow">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                  
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="edit-company-profile.html">Edit Profile</a>
+                      <a class="dropdown-item" href="#">Users</a>
+                      <a class="dropdown-item" href="#">Properties</a>
+                      <a class="dropdown-item" href="#">Company Settings</a>
+                    </div>
+                  </div>
+            </li> 
+            <hr> 
+          </ul>
+          <div class="sidebar-bottom">
+              <ul class="sidebar-bottom-menu">
+                  <li>
+                    <a href="#">
+                        Properties <span class="add-icon"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                    </a>
+                    <ul class="sidebar-bottom-submenu">
+                        <li><a href="pearl-plaza.html">Pearl Plaza</a></li>
+                        <li><a href="#">Property B</a></li>
+                        <li><a href="#">Property Delta</a></li>
+                        <li><a href="#">Property Gamma</a></li>
+                        <li><a href="#">Property Sigma</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <!-- #sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <div class="site-header">
+            <nav class="navbar navbar-expand-lg">
+                <h2 class="heading-left">Dashboard</h2>
+                <button class="navbar-toggler" type="button" id="menu-toggle"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">☰</span>
+                </button>
+        
+                <div class="collapse navbar-collapse"> 
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> Lindsay Harrington 
+                        <span class="down-arrow">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+          
+    
+        
+            <div id="tabs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav>
+                                <div class="nav nav-tabs nav-fill col-md-8" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="Efficiency-tab" data-toggle="tab" href="#Efficiency" role="tab" aria-controls="Efficiency" aria-selected="true">Global Leak/Efficiency Audit</a>
+                                    <a class="nav-item nav-link" id="Status-tab" data-toggle="tab" href="#Status" role="tab" aria-controls="Status" aria-selected="false">Global Leak Status</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="Efficiency" role="tabpanel" aria-labelledby="Efficiency-tab">
+                                    <div class="overview-content-top">
+                                        <div class="overvew-content-left">
+                                            <h2 class="table-heading">Overview</h2>
+                                            <span class="proprty-icon"><i class="fa fa-building-o" aria-hidden="true"></i><p>5 Properties</p></span>
+                                        </div>
+                                        
+                                        <div class="select-property-type">
+                                            <select class="form-control">
+                                                <option>All</option>
+                                                <option>Pearl Plaza</option>
+                                                <option>Property Delta</option>
+                                                <option>Property Gamma</option>
+                                                <option>Property Sigma</option>
+                                            </select>
+                                        </div>  
+                                    </div>
+                                    
+                                    <div class="overview-table" style="overflow-x: auto">
+                                        <table class="table">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Profile</th>
+                                                <th scope="col">Efficiency Rating</th>
+                                                <th scope="col">Leak Status</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td rowspan="4">
+                                                    <div class="profile-list">
+                                                        <ul>
+                                                            <li>
+                                                              <span class="list-icon list-icon-blue">
+                                                                  <img src="assets/images/plans.png" />
+                                                                </span>
+                                                              <div class="list-desc">
+                                                                <span class="list-no list-no-blue">12</span> 
+                                                                <small>Floor Plans</small>
+                                                              </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="list-icon list-icon-purple">
+                                                                    <img src="assets/images/units.png" />
+                                                                </span>
+                                                                <div class="list-desc">
+                                                                    <span class="list-no list-no-purple">28</span> 
+                                                                    <small>Units</small>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <span class="list-icon list-icon-green">
+                                                                    <img src="assets/images/meters.png" />
+                                                                </span>
+                                                                <div class="list-desc">
+                                                                   <span class="list-no list-no-green">16</span> 
+                                                                   <small>Water meters</small>
+                                                                </div>
+                                                              </li>
+                                                              <li>
+                                                                <span class="list-icon list-icon-orange">
+                                                                    <img src="assets/images/audits.png" />
+                                                                </span>
+                                                                <div class="list-desc">
+                                                                    <span class="list-no list-no-orange">4</span> 
+                                                                    <small>Audits</small>
+                                                                </div>
+                                                              </li>
+                                                        </ul>
+                                                        <div class="view-profile-wrap">
+                                                            <a href="#">View Company Profile <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="pink-bg pink-border">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">60%</span>
+                                                                    <span class="list-no list-no-pink">Low</span>
+                                                                </div>
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart1" style="width: 100px;"></div>
+                                                                </div>   
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="pink-bg">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">0%</span>
+                                                                    <span class="list-no list-no-pink">Major Leak</span>
+                                                                </div>
+                                                                <!-- <span class="rating-icon rating-icon-low"><img src="" /></span> -->
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart2" style="width: 100px;"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td class="orange-bg orange-border">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">0%</span>
+                                                                    <span class="list-no list-no-orange">Medium</span>
+                                                                </div>
+                                                                <!-- <span class="rating-icon rating-icon-medium"><img src="" /></span> -->
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart3" style="width: 100px;"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="orange-bg">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">10%</span>
+                                                                    <span class="list-no list-no-orange">Minor Leak</span>
+                                                                </div>
+                                                                <!-- <span class="rating-icon rating-icon-medium"><img src="" /></span> -->
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart4" style="width: 100px;"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                
+                                                <td class="green-bg green-border">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">20%</span>
+                                                                    <span class="list-no list-no-green">High</span>
+                                                                </div>
+                                                                <!-- <span class="rating-icon rating-icon-high"><img src="" /></span> -->
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart5" style="width: 100px;"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="green-bg">
+                                                    <div class="rating-list">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="rating-status">
+                                                                    <span class="rating-percentage">40%</span>
+                                                                    <span class="list-no list-no-green">No Leak</span>
+                                                                </div>
+                                                                <!-- <span class="rating-icon rating-icon-high"><img src="" /></span> -->
+                                                                <div class="chart-wrap">
+                                                                    <div id="chart6" style="width: 100px;"></div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="property-wrap">
+                                        <div class="property-content-top">
+                                            <h2 class="table-heading">Properties</h2>
+                                            <a href="#" class="new-property">
+                                                <i class="fa fa-plus" aria-hidden="true"></i> New Property
+                                            </a>
+                                        </div>
+                                        <div id="property-tabs">
+                                                
+                                                    <div class="row">
+                                                        <div class="col-md-12 ">
+                                                            <nav>
+                                                                <div class="nav nav-tabs nav-fill col-md-8" id="nav-tab" role="tablist">
+                                                                    <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">All <span class="rank">5</span></a>
+                                                                    <a class="nav-item nav-link" id="nav-audit-tab" data-toggle="tab" href="#nav-audit" role="tab" aria-controls="nav-audit" aria-selected="false">With audits <span class="rank">1</span></a>
+                                                                    <a class="nav-item nav-link" id="nav-action-tab" data-toggle="tab" href="#nav-action" role="tab" aria-controls="nav-action" aria-selected="false">Action Required <span class="rank">4</span></a>
+                                                                </div>
+                                                            </nav>
+                                                            <div class="tab-content property-tab-content" id="nav-tabContent">
+                                                                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                                                                    <ul class="property-content">
+                                                                        <li>
+                                                                            <p>Pearl Plaza</p>
+                                                                            <div class="property-status">
+                                                                                <small>No audit</small>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Property B</p>
+                                                                            <div class="property-status">
+                                                                                <small>No audit: <span class="list-no list-no-green">Complete</span></small>
+                                                                                <div class="progress-bar">
+                                                                                    <label for="file"><small>Fix: <span class="list-no list-no-orange">In Progress</span></small></label>
+                                                                                    <progress id="file" value="80" max="100"> 80% </progress>
+                                                                                    <span class="progress-percentage">80%</span>
+                                                                                </div> 
+                                                                            </div>
+                                                                            
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Property Delta</p>
+                                                                            <div class="property-status">
+                                                                                <small>No audit</small>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Property Gamma</p>
+                                                                            <div class="property-status">
+                                                                                <small>No audit</small>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>Property Sigma</p>
+                                                                            <div class="property-status">
+                                                                                <small>No audit</small>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="nav-audit" role="tabpanel" aria-labelledby="nav-audit-tab">
+                                                                    ...
+                                                                </div>
+                                                                <div class="tab-pane fade" id="nav-action" role="tabpanel" aria-labelledby="nav-action-tab">
+                                                                    ...
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="Status" role="tabpanel" aria-labelledby="Status-tab">
+                                    ...
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+          
+        </div>
+        <!-- /#page-content-wrapper -->
+    
+      </div>
+      <!-- /#wrapper --> 
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.8.6/apexcharts.min.js"></script>
+    <script>
+        
+    var options = {
+        chart: {
+            type: "donut",
+            // zorgt dat de donut groter wordt en de legenda weg is.
+            sparkline: {
+                enabled: true
+            }
+        },
+        // deze staan vast
+        series: [60, 40],
+        colors: ["#ff8c8c", "#f2e5e5"],
+        
+        // zorgt voor standaard tooltip en correct weergave van de waarde
+        tooltip: {
+            enabled: false,
+        },
+        
+        // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+        states: {
+            hover: {
+                filter: {
+                    type: "none"
+                }
+            }
+        },
+        plotOptions: {
+            pie: {
+                // mag aan of uit (animatie)
+                expandOnClick: false,
+            }
+        }
+    };
+    
+    var chart = new ApexCharts(document.querySelector("#chart1"), options);
+    chart.render();
+
+    </script>
+    <script>
+        var options = {
+          chart: {
+              type: "donut",
+              // zorgt dat de donut groter wordt en de legenda weg is.
+              sparkline: {
+                  enabled: true
+              }
+          },
+          // deze staan vast
+          series: [100],
+          colors: ["#f2e5e5"],
+          
+          // zorgt voor standaard tooltip en correct weergave van de waarde
+          tooltip: {
+              enabled: false,
+          },
+          
+          // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+          states: {
+              hover: {
+                  filter: {
+                      type: "none"
+                  }
+              }
+          },
+
+          plotOptions: {
+              pie: {
+                  // mag aan of uit (animatie)
+                  expandOnClick: false,
+              }
+          }
+      };
+      
+      var chart = new ApexCharts(document.querySelector("#chart2"), options);
+      chart.render();
+    </script>
+     <script>
+        var options = {
+          chart: {
+              type: "donut",
+              // zorgt dat de donut groter wordt en de legenda weg is.
+              sparkline: {
+                  enabled: true
+              }
+          },
+          // deze staan vast
+          series: [100],
+          colors: ["#f2e5e5"],
+          
+          // zorgt voor standaard tooltip en correct weergave van de waarde
+          tooltip: {
+              enabled: false,
+              fillSeriesColor: false,
+          },
+          
+          // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+          states: {
+              hover: {
+                  filter: {
+                      type: "none"
+                  }
+              }
+          },
+          plotOptions: {
+              pie: {
+                  // mag aan of uit (animatie)
+                  expandOnClick: false,
+              }
+          }
+      };
+      
+      var chart = new ApexCharts(document.querySelector("#chart3"), options);
+      chart.render();
+    </script>
+    <script>
+        var options = {
+          chart: {
+              type: "donut",
+              // zorgt dat de donut groter wordt en de legenda weg is.
+              sparkline: {
+                  enabled: true
+              }
+          },
+          // deze staan vast
+          series: [10, 90], 
+          colors: ["#f8ae18", "#f2e5e5"],
+          
+          // zorgt voor standaard tooltip en correct weergave van de waarde
+          tooltip: {
+              enabled: false,
+              fillSeriesColor: false,
+          },
+          
+          // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+          states: {
+              hover: {
+                  filter: {
+                      type: "none"
+                  }
+              }
+          },
+          plotOptions: {
+              pie: {
+                  // mag aan of uit (animatie)
+                  expandOnClick: false,
+              }
+          }
+      };
+      
+      var chart = new ApexCharts(document.querySelector("#chart4"), options);
+      chart.render();
+    </script>
+    <script>
+        var options = {
+          chart: {
+              type: "donut",
+              // zorgt dat de donut groter wordt en de legenda weg is.
+              sparkline: {
+                  enabled: true
+              }
+          },
+          // deze staan vast
+          series: [20, 80],
+          colors: ["#6bd363", "#e3f4de"],
+          
+          // zorgt voor standaard tooltip en correct weergave van de waarde
+          tooltip: {
+              enabled: false,
+              fillSeriesColor: false,
+          },
+          
+          // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+          states: {
+              hover: {
+                  filter: {
+                      type: "none"
+                  }
+              }
+          },
+          plotOptions: {
+              pie: {
+                  // mag aan of uit (animatie)
+                  expandOnClick: false,
+              }
+          }
+      };
+      
+      var chart = new ApexCharts(document.querySelector("#chart5"), options);
+      chart.render();
+    </script>
+    <script>
+        var options = {
+          chart: {
+              type: "donut",
+              // zorgt dat de donut groter wordt en de legenda weg is.
+              sparkline: {
+                  enabled: true
+              }
+          },
+          // deze staan vast
+          series: [40, 60],
+          colors: ["#6bd363", "#e3f4de"],
+          
+          // zorgt voor standaard tooltip en correct weergave van de waarde
+          tooltip: {
+              enabled: false,
+              fillSeriesColor: false,
+          },
+          
+          // zorgt ervoor dat de hovercolor gelijk is aan de standaard kleur
+          states: {
+              hover: {
+                  filter: {
+                      type: "none"
+                  }
+              }
+          },
+          plotOptions: {
+              pie: {
+                  // mag aan of uit (animatie)
+                  expandOnClick: false,
+              }
+          }
+      };
+      
+      var chart = new ApexCharts(document.querySelector("#chart6"), options);
+      chart.render();
+    </script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+  </body>
+</html>

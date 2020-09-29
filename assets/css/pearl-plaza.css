@@ -1,0 +1,425 @@
+.site-content {
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px 3px rgba(210,213,214,0.7));
+    background-color: #ffffff;
+    padding: 5px 15px;
+    margin: 8px 0;
+}
+
+.site-content-heading {
+    font-size: 16px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 600;
+    margin: 0;
+}
+
+.site-content-top {
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-content-bottom {
+    padding: 5px 0;
+}
+
+#water-tabs nav {
+    background-color: transparent;
+    border: none;
+    filter: none;
+    padding: 0;
+}
+
+#water-tabs .nav-item {
+    padding: 5px 10px;
+}
+
+.table-wrap {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px 3px rgba(210,213,214,0.7));
+    background-color: #ffffff;
+}
+
+.table-wrap .table {
+    margin: 0;
+}
+
+.water-table-heading {
+    font-size: 16px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 600;
+    margin: 0px;
+    padding: 15px;
+}
+
+.table-wrap thead th {
+    font-size: 13px;
+    color: #6f808c;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table-wrap tbody td{
+    padding: 14px 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 400;
+    vertical-align: middle;
+}
+.table-wrap tbody .clickable i {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.table-wrap tbody .clickable.collapsed i{
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.action-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.action-wrap i {
+    margin-right: 5px;
+}
+.action-wrap button {
+    margin-right: 10px;
+}
+
+.accordion-content td {
+    border: none;
+    margin: 0;
+    padding: 0 !important;
+    width: 100%;
+}
+
+.accordion-content #water-tabs {
+    padding: 5px 25px;
+}
+
+
+.time-wrap .time {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6f808c;
+    font-weight: 400;
+}
+
+.time-wrap .date {
+    display: block;
+}
+.pagination .page-item {
+    padding: 0 15px;
+    font-size: 13px;
+    color: #6f808c;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.pagination .page-item .dropdown .btn {
+    font-weight: 500;
+    font-size: 13px;
+    color: #6f808c;
+}
+
+.pagination .page-item .dropdown-menu {
+    padding: 0;
+}
+.pagination .page-item .dropdown-item {
+    font-weight: 500;
+    font-size: 13px;
+    padding: 10px 15px;
+    color: #6f808c;
+}
+
+.pagination .page-item .dropdown-menu {
+    padding: 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.prev-btn, .next-btn {
+    background-color: transparent;
+    color: #6f808c;
+    border: none;
+    padding: 5px 15px;
+    font-size: 20px;
+}
+
+
+.info-wrap h3 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 500;
+    margin: 0;
+}
+
+.stripped-bg {
+    background-color: #f7f8fa;
+}
+
+.info-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.info-wrap p {
+    font-size: 13px;
+    color: #454545;
+    font-weight: 500;
+    margin: 0;
+}
+
+.info-wrap .edit-btn {
+    font-size: 13px;
+    line-height: 24px;
+    color: #267ddf;
+    font-weight: 500;
+}
+
+.property-setting-table tbody td {
+    vertical-align: top;
+    width: 120px;
+    border: 1px solid #ebedf2;
+    border-right: 0;
+}
+
+
+#property-manager-wrap nav {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px 3px rgba(210,213,214,0.7));
+    background-color: #ffffff;
+    padding: 0;
+}
+
+#property-manager-wrap .nav {
+    display: block;
+}
+
+#property-manager-wrap .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+    color: #6f808c;
+    font-weight: 500;
+    border: none;
+}
+
+#property-manager-wrap .nav-item i {
+    font-size: 18px;
+}
+
+#property-manager-wrap .nav-item.active {
+    color: #267ddf;
+    border: none;
+}
+
+.manager-content-wrap {
+    border-radius: 4px;
+    filter: drop-shadow(0px 2px 3px rgba(210,213,214,0.7));
+    background-color: #ffffff;
+    margin: 5px 0;
+}
+
+.content-heading {
+    font-size: 16px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dfe5e8;
+}
+.manager-content-body .card {
+    background-color: #fff;
+    border: none;
+}
+
+.manager-content-body .card-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 10px;
+}
+
+.manager-content-body .card-content-left {
+    display: flex;
+    align-items: center;
+}
+
+.card-content-left button {
+    color: #000;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.card-content-right .form-input {
+    position: relative;
+}
+.card-content-right .form-input label {
+    margin: 0;
+    font-size: 13px;
+    line-height: 24px;
+    color: #6f808c;
+    font-weight: 400;
+    position: absolute;
+    left: 50px;
+}
+
+.card-content-right .form-input input {
+    width: 40px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #dfe5e8;
+    font-size: 14px;
+    line-height: 24px;
+    color: #454545;
+    font-weight: 400;
+}
+
+.card-content-left .form-check-label {
+    font-size: 15px;
+    line-height: 24px;
+    color: #267ddf;
+    font-weight: 500;
+    margin-left: 15px;
+}
+.card-content-left button:hover {
+    color: #000;
+}
+.card-content-left button.collapsed {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.card-content-left button {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.card-content-left .form-check {
+    margin-left: 10px;
+}
+
+.card-content-left .form-check input[type=checkbox]{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 4px -15px;
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+.card-content-right .form-input input[type="number"]:disabled {
+    background: #f5f6fa;
+  }
+.manager-content-foot {
+    padding: 20px;
+}
+
+.card-body-heading {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 24px;
+    color: #6f808c;
+    font-weight: 500;
+}
+
+.manager-content-body .card-body ul {
+    list-style: none;
+    margin: 0 0px 20px;
+    padding: 0;
+}
+
+.manager-content-body .card-body ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 10px 0;
+    border-bottom: 1px solid #dfe5e8;
+}
+
+.manager-content-body .card-body ul li:last-child {
+    border: none;
+}
+
+.manager-content-body .card-body ul li .card-content-left .form-check {
+    margin: 0;
+}
+
+.manager-content-body .card-body {
+    padding: 10px 0 10px 100px;
+}
+
+
+@media(min-width: 992px) and (max-width: 1190px){
+    .table-wrap thead th, .table-wrap tbody td {
+        padding: 8px 10px;
+    }
+} 
+
+@media(max-width: 991px){
+    .table-wrap thead th, .table-wrap tbody td {
+        min-width: 150px;
+    }
+} 
+
+
+@media(max-width: 767px){
+    .manager-content-body .card-body {
+        padding: 10px 0 10px 20px;
+    }
+}
+
+@media(max-width: 425px){
+    .manager-content-body .card-header {
+        display: block;
+        padding: 10px 10px 10px 10px;
+    }
+    .card-content-right .form-input {
+        padding: 10px;
+    }
+    .card-content-right .form-input label {
+        left: 60px;
+        top: 10px;
+    }
+    .manager-content-body .card-body ul li {
+        display: block;
+        padding: 10px 10px 10px 0;
+    }
+    .manager-content-body .card-body ul li .form-input {
+        padding: 10px 0;
+    }
+    .manager-content-body .card-body ul li .form-input label {
+        left: 50px;
+        top: 10px;
+    }
+}

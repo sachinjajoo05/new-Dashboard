@@ -1,0 +1,1185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/sidebar.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/pearl-plaza.css" rel="stylesheet">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+          <div class="sidebar-header"><img src="assets/images/logo.png" alt="logo" /></div>
+          <ul class="list-group">
+            <li>
+                <a href="dashboard.html" class="list-group-item">
+                    <span class="sidebar-list-icon home-icon" style="background-image: url(assets/images/home-gray.png);"></span> Dashboard
+                </a>
+            </li>
+            <li>
+                <div class="dropdown show">
+                    <a class="list-group-item dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sidebar-list-icon company-icon" style="background-image: url(assets/images/company-gray.png);"></span> Company Profile 
+                        <span class="down-arrow">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                  
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="edit-company-profile.html">Edit Profile</a>
+                      <a class="dropdown-item" href="#">Users</a>
+                      <a class="dropdown-item" href="#">Properties</a>
+                      <a class="dropdown-item" href="#">Company Settings</a>
+                    </div>
+                  </div>
+            </li> 
+            <hr> 
+          </ul>
+          <div class="sidebar-bottom">
+              <ul class="sidebar-bottom-menu">
+                  <li>
+                    <a href="#">
+                        Properties <span class="add-icon"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                    </a>
+                    <ul class="sidebar-bottom-submenu">
+                        <li class="active"><a href="#">Pearl Plaza</a></li>
+                        <li><a href="#">Property B</a></li>
+                        <li><a href="#">Property Delta</a></li>
+                        <li><a href="#">Property Gamma</a></li>
+                        <li><a href="#">Property Sigma</a></li>
+                    </ul>
+                  </li>
+              </ul>
+          </div>
+        </div>
+        <!-- #sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <div class="site-header">
+            <nav class="navbar navbar-expand-lg">
+                <h2 class="heading-left"><img src="assets/images/profile.png" alt="img" /> Pearl Plaza</h2>
+                <button class="navbar-toggler" type="button" id="menu-toggle"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">☰</span>
+                </button>
+        
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <div class="btn-wrap">
+                            <button class="button button-lg btn-blue">Log meter reading</button>
+                        </div> 
+                    </li>  
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i> Lindsay Harrington 
+                        <span class="down-arrow">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+          </div>
+          
+    
+        
+            <div id="tabs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <nav>
+                                <div class="nav nav-tabs nav-fill col-lg-8" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="Dashboard-tab" data-toggle="tab" href="#Dashboard" role="tab" aria-controls="Dashboard" aria-selected="true">Dashboard</a>
+                                    <a class="nav-item nav-link" id="Alerts-tab" data-toggle="tab" href="#Alerts" role="tab" aria-controls="Alerts" aria-selected="false">Alerts/Events <span class="notifications-wrap alerts-number">2 new</span></a>
+                                    <a class="nav-item nav-link" id="Settings-tab" data-toggle="tab" href="#Settings" role="tab" aria-controls="Settings" aria-selected="true">Property Settings</a>
+                                    <a class="nav-item nav-link" id="Manager-tab" data-toggle="tab" href="#Manager" role="tab" aria-controls="Manager" aria-selected="false">Property Manager</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="Dashboard" role="tabpanel" aria-labelledby="Dashboard-tab">
+                                    <div class="site-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="site-content">
+                                                    <div class="site-content-top">
+                                                        <h2 class="site-content-heading">
+                                                            Overview
+                                                        </h2> 
+                                                    </div> 
+                                                    <div class="site-content-bottom">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="profile-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span class="list-icon list-icon-blue">
+                                                                              <img src="assets/images/plans.png">
+                                                                            </span>
+                                                                          <div class="list-desc">
+                                                                            <span class="list-no list-no-blue">12</span> 
+                                                                            <small>Floor Plans</small>
+                                                                          </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="profile-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span class="list-icon list-icon-purple">
+                                                                                <img src="assets/images/units.png">
+                                                                            </span>
+                                                                            <div class="list-desc">
+                                                                                <span class="list-no list-no-purple">28</span> 
+                                                                                <small>Units</small>
+                                                                            </div>
+                                                                          </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="profile-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span class="list-icon list-icon-green">
+                                                                                <img src="assets/images/meters.png">
+                                                                            </span>
+                                                                            <div class="list-desc">
+                                                                               <span class="list-no list-no-green">16</span> 
+                                                                               <small>Water meters</small>
+                                                                            </div>
+                                                                          </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="profile-list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <span class="list-icon list-icon-orange">
+                                                                                <img src="assets/images/audits.png">
+                                                                            </span>
+                                                                            <div class="list-desc">
+                                                                                <span class="list-no list-no-orange">4</span> 
+                                                                                <small>Audits</small>
+                                                                            </div>
+                                                                          </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="site-content">
+                                                    <div class="site-content-top">
+                                                        <h2 class="site-content-heading">
+                                                            Billing Summary
+                                                        </h2> 
+                                                    </div> 
+                                                    <div class="site-content-bottom">
+                                                       <div class="graph-wrap">
+                                                           <img src="assets/images/graph1.png" alt="graph" class="img-fluid" />
+                                                       </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="site-content">
+                                                    <div class="site-content-top">
+                                                        <h2 class="site-content-heading">
+                                                            Total Water Usage
+                                                        </h2>
+                                                        <div id="water-tabs">
+                                                            <nav>
+                                                                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                                    <a class="nav-item nav-link active" id="Daily-tab" data-toggle="tab" href="#Daily" role="tab" aria-controls="Daily" aria-selected="true">Daily</a>
+                                                                    <a class="nav-item nav-link" id="Weekly-tab" data-toggle="tab" href="#Weekly" role="tab" aria-controls="Weekly" aria-selected="false">Weekly</a>
+                                                                </div>
+                                                            </nav>
+                                                        </div>   
+                                                    </div>
+                                                    <div class="site-content-bottom">
+                                                        <div class="tab-content" id="water-tabContent">
+                                                            <div class="tab-pane fade show active" id="Daily" role="tabpanel" aria-labelledby="Daily-tab">
+                                                                <div class="graph-wrap">
+                                                                    <img src="assets/images/graph2.png" alt="graph" class="img-fluid" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Weekly" role="tabpanel" aria-labelledby="Weekly-tab">
+                                                                <div class="graph-wrap">
+                                                                    <img src="assets/images/graph2.png" alt="graph" class="img-fluid" />
+                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="table-wrap">
+                                                    <h2 class="water-table-heading">Water Meters</h2>
+                                                    <div class="water-meter-table" style="overflow-x: auto">
+                                                        <table class="table">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">Meter Name</th>
+                                                                <th scope="col">Meter Reading</th>
+                                                                <th scope="col">Overage%</th>
+                                                                <th scope="col">Date</th>
+                                                                <th scope="col"></th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td data-toggle="collapse" data-target="#accordionone" class="clickable collapsed"><i class="fa fa-caret-right" aria-hidden="true"></i> AC Flowie 1</td>
+                                                                <td>1677</td>
+                                                                <td>0%</td>
+                                                                <td>09/07/20</td>
+                                                                <td>
+                                                                    <div class="action-wrap">
+                                                                        <button class="button button-sm btn-white"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                                                        <button class="button button-lg btn-white"><i class="fa fa-tachometer" aria-hidden="true"></i> Meter Readings</button>
+                                                                        <button class="button button-lg btn-blue">Log Meter Reading</button>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr class="accordion-content">
+                                                                <td colspan="5">
+                                                                    <div id="accordionone" class="collapse">
+                                                                        <div id="water-tabs">
+                                                                            <nav>
+                                                                                <div class="nav nav-tabs nav-fill col-md-2" id="nav-tab" role="tablist">
+                                                                                    <a class="nav-item nav-link active" id="Acc-Daily1-tab" data-toggle="tab" href="#Acc-Daily1" role="tab" aria-controls="Acc-Daily1" aria-selected="true">Daily</a>
+                                                                                    <a class="nav-item nav-link" id="Acc-Weekly1-tab" data-toggle="tab" href="#Acc-Weekly1" role="tab" aria-controls="Acc-Weekly1" aria-selected="false">Weekly</a>
+                                                                                </div>
+                                                                            </nav>
+                                                                            <div class="tab-content" id="water-tabContent">
+                                                                                <div class="tab-pane fade show active" id="Acc-Daily1" role="tabpanel" aria-labelledby="Acc-Daily1-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph3.png" alt="graph" class="img-fluid">
+                                                                                    </div>    
+                                                                                </div>
+                                                                                <div class="tab-pane fade" id="Acc-Weekly1" role="tabpanel" aria-labelledby="Acc-Weekly1-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph4.png" alt="graph" class="img-fluid">
+                                                                                    </div>    
+                                                                                </div>
+                                                                                
+                                                                            </div>  
+                                                                        </div> 
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td data-toggle="collapse" data-target="#accordiontwo" class="clickable collapsed"><i class="fa fa-caret-right" aria-hidden="true"></i> AC Flowie 2</td>
+                                                                <td>2000</td>
+                                                                <td>0%</td>
+                                                                <td>09/07/20</td>
+                                                                <td>
+                                                                    <div class="action-wrap">
+                                                                        <button class="button button-sm btn-white"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                                                        <button class="button button-lg btn-white"><i class="fa fa-tachometer" aria-hidden="true"></i> Meter Readings</button>
+                                                                        <button class="button button-lg btn-blue">Log Meter Reading</button>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr class="accordion-content">
+                                                                <td colspan="5">
+                                                                    <div id="accordiontwo" class="collapse">
+                                                                        
+                                                                        <div id="water-tabs">
+                                                                            <nav>
+                                                                                <div class="nav nav-tabs nav-fill col-md-2" id="nav-tab" role="tablist">
+                                                                                    <a class="nav-item nav-link active" id="Acc-Daily2-tab" data-toggle="tab" href="#Acc-Daily2" role="tab" aria-controls="Acc-Daily2" aria-selected="true">Daily</a>
+                                                                                    <a class="nav-item nav-link" id="Acc-Weekly2-tab" data-toggle="tab" href="#Acc-Weekly2" role="tab" aria-controls="Acc-Weekly2" aria-selected="false">Weekly</a>
+                                                                                </div>
+                                                                            </nav>
+                                                                            <div class="tab-content" id="water-tabContent">
+                                                                                <div class="tab-pane fade show active" id="Acc-Daily2" role="tabpanel" aria-labelledby="Acc-Daily2-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph3.png" alt="graph" class="img-fluid">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tab-pane fade" id="Acc-Weekly2" role="tabpanel" aria-labelledby="Acc-Weekly2-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph4.png" alt="graph" class="img-fluid">
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td data-toggle="collapse" data-target="#accordionthree" class="clickable collapsed"><i class="fa fa-caret-right" aria-hidden="true"></i> AC Flowie 3</td>
+                                                                <td>---</td>
+                                                                <td>---</td>
+                                                                <td>---</td>
+                                                                <td>
+                                                                    <div class="action-wrap">
+                                                                        <button class="button button-sm btn-white"><i class="fa fa-pencil" aria-hidden="true"></i> Edit</button>
+                                                                        <button class="button button-lg btn-white"><i class="fa fa-tachometer" aria-hidden="true"></i> Meter Readings</button>
+                                                                        <button class="button button-lg btn-blue">Log Meter Reading</button>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr class="accordion-content">
+                                                                <td colspan="5">
+                                                                    <div id="accordionthree" class="collapse">
+                                                                        
+                                                                        <div id="water-tabs">
+                                                                            <nav>
+                                                                                <div class="nav nav-tabs nav-fill col-md-2" id="nav-tab" role="tablist">
+                                                                                    <a class="nav-item nav-link active" id="Acc-Daily3-tab" data-toggle="tab" href="#Acc-Daily3" role="tab" aria-controls="Acc-Daily3" aria-selected="true">Daily</a>
+                                                                                    <a class="nav-item nav-link" id="Acc-Weekly3-tab" data-toggle="tab" href="#Acc-Weekly3" role="tab" aria-controls="Acc-Weekly3" aria-selected="false">Weekly</a>
+                                                                                </div>
+                                                                            </nav>
+                                                                            <div class="tab-content" id="water-tabContent">
+                                                                                <div class="tab-pane fade show active" id="Acc-Daily3" role="tabpanel" aria-labelledby="Acc-Daily3-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph3.png" alt="graph" class="img-fluid">
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="tab-pane fade" id="Acc-Weekly3" role="tabpanel" aria-labelledby="Acc-Weekly3-tab">
+                                                                                    <div class="graph-wrap">
+                                                                                        <img src="assets/images/graph4.png" alt="graph" class="img-fluid">
+                                                                                    </div>
+                                                                                </div>
+                                                                                
+                                                                            </div>  
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
+                                    </div>                                     
+                                </div>
+                                <div class="tab-pane fade" id="Alerts" role="tabpanel" aria-labelledby="Alerts-tab">
+                                    <div class="site-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table-wrap">
+                                                    <div class="alert-event-table" style="overflow-x: auto">
+                                                        <table class="table">
+                                                            <thead>
+                                                              <tr>
+                                                                <th scope="col">Event</th>
+                                                                <th scope="col">Property Name</th>
+                                                                <th scope="col">Sensor Type & Description</th>
+                                                                <th scope="col">Start Time</th>
+                                                                <th scope="col">End Time</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-pink">Leak</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-purple">Sensor offline</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-orange">Power outage</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-lgt-purple">Floodie battery level</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-green">Battery Power</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-orange">Power outage</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-pink">Leak</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td>
+                                                                    <div class="button-wrap">
+                                                                        <button class="button button-lg btn-lgt-purple">Floodie battery level</button>
+                                                                    </div>
+                                                                </td>
+                                                                <td>Wilshire on Mockingbird</td>
+                                                                <td>FlowieO - WMB Flowie 1</td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="time-wrap">
+                                                                        <span class="date">Mon, August 17</span>
+                                                                        <small class="time">12:00 AM</small>
+                                                                    </div>
+                                                                </td>
+                                                              </tr>
+                                                            </tbody>
+                                                            <tfoot>
+                                                            <tr>
+                                                                <td colspan="5">
+                                                                    <div class="pagination-wrap" aria-label="Page navigation">
+                                                                        <ul class="pagination">
+                                                                        <li class="page-item">Rows per page:
+                                                                            <div class="dropdown">
+                                                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                  30 <i class="fa fa-angle-down" aria-hidden="true"></i> 
+                                                                                </button>
+                                                                                <div class="dropdown-menu">
+                                                                                  <a class="dropdown-item" href="#">10</a>
+                                                                                  <a class="dropdown-item" href="#">20</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="page-item">1-8 of 8</li>
+                                                                       
+                                                                        <li class="page-item">
+                                                                            <div class="button-wrap">
+                                                                                <button class="button prev-btn">
+                                                                                    <i class="fa fa-angle-left" aria-hidden="true"></i> 
+                                                                                </button>
+                                                                                <button class="button next-btn">
+                                                                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                                                </button>
+                                                                            </div> 
+                                                                        </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr> 
+                                                            </tfoot>
+                                                        </table>
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="Settings" role="tabpanel" aria-labelledby="Settings-tab">
+                                   <div class="site-wrapper">
+                                       <div class="row">
+                                           <div class="col-md-12">
+                                               <div class="table-wrap">
+                                                   <div class="property-setting-table"  style="overflow-x: auto">
+                                                    <table class="table">
+                                                        <tbody>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>User Information</h3> 
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Raunak Agarwal</h3> 
+                                                                        <p>raunak.clix@gmail.com</p>
+                                                                        <p>7597404251</p>
+                                                                        <p>31300</p>
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>Company Information</h3> 
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Clixlogix</h3> 
+                                                                        <p>711-2880 Nulla St. Mankato Mississippi, AK</p> 
+                                                                        <p>874828</p>
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>Property Information</h3> 
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Autumn Creek Apartments </h3> 
+                                                                        <p>10765 E NW Hwy, Dallas, TX, US Dallas</p>
+                                                                        <p>Year Built: 2008</p>    
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>    
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>Additional Property Details</h3> 
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Total Tenants: 10</h3> 
+                                                                        <p>Occupancy Rate: 190</p>
+                                                                        <p>Total Water Meters: 1</p>    
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>Water Efficiency Evaluation</h3> 
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Shower Head: High</h3> 
+                                                                        <p>Bathroom Faucet: Medium</p>
+                                                                        <p>Toilet: High</p>
+                                                                        <p>Kitchen Faucet: High</p>
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                   <h3>Floor Plans</h3> 
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Studio: 1</h3> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                  <h3>Water Meters</h3>  
+                                                                </div>    
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Total Water Meters: 1</h3> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                  <h3>Units</h3>  
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Studio: 1/1 assigned</h3> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                  <h3>Users</h3>  
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Not completed</h3> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                    <h3>Schedule Automated Reporting</h3>   
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Not completed</h3> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="stripped-bg">
+                                                                <div class="info-wrap">
+                                                                    <h3>Overage Settings</h3>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="info-wrap">
+                                                                    <div class="info-content-left">
+                                                                        <h3>Total Settings: 3</h3> 
+                                                                       
+                                                                    </div>
+                                                                    <div class="info-content-right">
+                                                                        <a href="#" class="edit-btn">Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                                
+                                                            </td>
+                                                            
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                </div>
+                                <div class="tab-pane fade" id="Manager" role="tabpanel" aria-labelledby="Manager-tab">
+                                    <div class="site-wrapper">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                               <div id="property-manager-wrap">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <nav>
+                                                            <div class="nav nav-tabs nav-fill" id="property-manager-tab" role="tablist">
+                                                                <a class="nav-item nav-link active" id="Floor-tab" data-toggle="tab" href="#Floor" role="tab" aria-controls="Floor" aria-selected="true">Floor Plans <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                                <a class="nav-item nav-link" id="Units-tab" data-toggle="tab" href="#Units" role="tab" aria-controls="Units" aria-selected="false">Units <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                                <a class="nav-item nav-link" id="Meters-tab" data-toggle="tab" href="#Meters" role="tab" aria-controls="Meters" aria-selected="false">Water Meters <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                                <a class="nav-item nav-link" id="Users-tab" data-toggle="tab" href="#Users" role="tab" aria-controls="Users" aria-selected="false">Users <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                                <a class="nav-item nav-link" id="Audits-tab" data-toggle="tab" href="#Audits" role="tab" aria-controls="Audits" aria-selected="false">Audits <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </nav>
+                                                      </div>
+                                                      <div class="col-md-8">
+                                                        <div class="tab-content" id="property-manager-tabContent">
+                                                            <div class="tab-pane fade show active" id="Floor" role="tabpanel" aria-labelledby="Floor-tab">
+                                                                <div class="manager-content-wrap">
+                                                                    <div class="manager-content-head">
+                                                                         <h2 class="content-heading">Edit Floor Plans</h2>
+                                                                    </div>
+                                                                    <div class="manager-content-body">
+                                                                        <div id="accordion">
+                                                                            <div class="card">
+                                                                              <div class="card-header" id="headingOne">
+                                                                                <div class="card-content-left">
+                                                                                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                  </button>
+                                                                                  <div class="form-check">
+                                                                                    <input type="checkbox" class="form-check-input" checked>
+                                                                                    <label class="form-check-label">Studio</label>
+                                                                                  </div>
+                                                                                </div>
+                                                                                <div class="card-content-right">
+                                                                                    <div class="form-input">
+                                                                                        <input type="number" value="2">
+                                                                                        <label>Units</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                              </div>
+                                                                          
+                                                                              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                                                <div class="card-body">
+                                                                                  <h2 class="card-body-heading">
+                                                                                      Kitchen
+                                                                                  </h2>
+                                                                                  <ul>
+                                                                                      <li>
+                                                                                          <div class="card-content-left">
+                                                                                            <div class="form-check">
+                                                                                              <input type="checkbox" class="form-check-input" checked>
+                                                                                              <label class="form-check-label">Faucet</label>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                          <div class="card-content-right">
+                                                                                              <div class="form-input">
+                                                                                                  <input type="number" value="2">
+                                                                                                  <label>Faucets</label>
+                                                                                              </div>
+                                                                                          </div> 
+                                                                                      </li>
+                                                                                      <li>
+                                                                                          <div class="card-content-left">
+                                                                                            <div class="form-check">
+                                                                                              <input type="checkbox" class="form-check-input" checked>
+                                                                                              <label class="form-check-label">Dishwasher</label>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                      </li>
+                                                                                  </ul>
+                                                                                  <h2 class="card-body-heading">
+                                                                                    Master Bathroom
+                                                                                  </h2>
+                                                                                  <ul>
+                                                                                    <li>
+                                                                                        <div class="card-content-left">
+                                                                                          <div class="form-check">
+                                                                                            <input type="checkbox" class="form-check-input" checked>
+                                                                                            <label class="form-check-label">Shower</label>
+                                                                                          </div>
+                                                                                        </div> 
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div class="card-content-left">
+                                                                                          <div class="form-check">
+                                                                                            <input type="checkbox" class="form-check-input" checked>
+                                                                                            <label class="form-check-label">Bathtub</label>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div class="card-content-left">
+                                                                                          <div class="form-check">
+                                                                                            <input type="checkbox" class="form-check-input" checked>
+                                                                                            <label class="form-check-label">Toilet</label>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <div class="card-content-left">
+                                                                                          <div class="form-check">
+                                                                                            <input type="checkbox" class="form-check-input" checked>
+                                                                                            <label class="form-check-label">Faucet</label>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                        <div class="card-content-right">
+                                                                                            <div class="form-input">
+                                                                                                <input type="number" value="2">
+                                                                                                <label>Faucets</label>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="card">
+                                                                              <div class="card-header" id="headingTwo">
+                                                                                  <div class="card-content-left">
+                                                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                                                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                    <div class="form-check">
+                                                                                      <input type="checkbox" class="form-check-input">
+                                                                                      <label class="form-check-label">1 Bedroom / 1 Bath</label>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="card-content-right">
+                                                                                      <div class="form-input">
+                                                                                          <input type="number" value="0" disabled>
+                                                                                          <label>Units</label>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                                                <div class="card-body">
+                                                                                  ...
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="card">
+                                                                              <div class="card-header" id="headingThree">
+                                                                                <div class="card-content-left">
+                                                                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                                                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                    </button>
+                                                                                    <div class="form-check">
+                                                                                      <input type="checkbox" class="form-check-input">
+                                                                                      <label class="form-check-label">1 Bedroom / 2 Bath</label>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                  <div class="card-content-right">
+                                                                                      <div class="form-input">
+                                                                                          <input type="number" value="0" disabled>
+                                                                                          <label>Units</label>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                                                <div class="card-body">
+                                                                                  ...
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <div class="card">
+                                                                                <div class="card-header" id="headingFour">
+                                                                                  <div class="card-content-left">
+                                                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                      </button>
+                                                                                      <div class="form-check">
+                                                                                        <input type="checkbox" class="form-check-input">
+                                                                                        <label class="form-check-label">2 Bedroom / 1 Bath</label>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="card-content-right">
+                                                                                        <div class="form-input">
+                                                                                            <input type="number" value="0" disabled>
+                                                                                            <label>Units</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                                                                  <div class="card-body">
+                                                                                    ...
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <div class="card-header" id="headingFive">
+                                                                                  <div class="card-content-left">
+                                                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                      </button>
+                                                                                      <div class="form-check">
+                                                                                        <input type="checkbox" class="form-check-input">
+                                                                                        <label class="form-check-label">2 Bedroom / 2 Bath</label>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="card-content-right">
+                                                                                        <div class="form-input">
+                                                                                            <input type="number" value="0" disabled>
+                                                                                            <label>Units</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                                                                                  <div class="card-body">
+                                                                                    ...
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <div class="card-header" id="headingSix">
+                                                                                  <div class="card-content-left">
+                                                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                      </button>
+                                                                                      <div class="form-check">
+                                                                                        <input type="checkbox" class="form-check-input">
+                                                                                        <label class="form-check-label">3 Bedroom / 1 Bath</label>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="card-content-right">
+                                                                                        <div class="form-input">
+                                                                                            <input type="number" value="0" disabled>
+                                                                                            <label>Units</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                                                                                  <div class="card-body">
+                                                                                    ...
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <div class="card-header" id="headingSeven">
+                                                                                  <div class="card-content-left">
+                                                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                      </button>
+                                                                                      <div class="form-check">
+                                                                                        <input type="checkbox" class="form-check-input">
+                                                                                        <label class="form-check-label">3 Bedroom / 2 Bath</label>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="card-content-right">
+                                                                                        <div class="form-input">
+                                                                                            <input type="number" value="0" disabled>
+                                                                                            <label>Units</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                                                                                  <div class="card-body">
+                                                                                    ...
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <div class="card-header" id="headingEight">
+                                                                                  <div class="card-content-left">
+                                                                                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                                                                        <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                                                                      </button>
+                                                                                      <div class="form-check">
+                                                                                        <input type="checkbox" class="form-check-input">
+                                                                                        <label class="form-check-label">3 Bedroom / 3 Bath</label>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                    <div class="card-content-right">
+                                                                                        <div class="form-input">
+                                                                                            <input type="number" value="0" disabled>
+                                                                                            <label>Units</label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                                                                                  <div class="card-body">
+                                                                                    ...
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="manager-content-foot">
+                                                                        <div class="btn-wrap">
+                                                                            <button class="button btn-blue save-btn">Save</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Units" role="tabpanel" aria-labelledby="Units-tab">
+                                                                ...
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Meters" role="tabpanel" aria-labelledby="Meters-tab">
+                                                                ...
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Users" role="tabpanel" aria-labelledby="Users-tab">
+                                                                ...
+                                                            </div>
+                                                            <div class="tab-pane fade" id="Audits" role="tabpanel" aria-labelledby="Audits-tab">
+                                                                ...
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                </div>  
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+          
+        </div>
+        <!-- /#page-content-wrapper -->
+    
+      </div>
+      <!-- /#wrapper --> 
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+    <script>
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#wrapper").toggleClass("toggled");
+        });
+      </script>
+  </body>
+</html>
