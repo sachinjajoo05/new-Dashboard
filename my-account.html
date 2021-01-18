@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="assets/css/sidebar.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/edit-profile.css" rel="stylesheet">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div id="overlay"></div>
+  <div class="d-flex" id="wrapper">
+
+    <div class="top-side-wrap">
+      <!-- top-header-start-->
+      <div class="site-header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar-content-left">
+            <button class="navbar-toggler" type="button" id="menu-toggle" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <div></div>
+                <div></div>
+                <div></div>
+              </span>
+            </button>
+            <h2 class="heading-left">My Account</h2>
+          </div>
+
+
+          <div class="navbar-content-right">
+            <ul class="navbar-nav ml-auto mt-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <i class="fa fa-user" aria-hidden="true"></i> Lindsay Harrington
+                  <span class="down-arrow">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- top-header-ends-->
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" style="display: none;">
+        <div class="sidebar-header">
+          <img src="assets/images/logo.png" alt="logo" />
+        </div>
+        <ul class="list-group">
+          <li>
+            <a href="index.html" class="list-group-item">
+              <span class="sidebar-list-icon home-icon"
+                style="background-image: url(assets/images/home-gray.png);"></span> Dashboard
+            </a>
+          </li>
+          <li>
+            <div class="dropdown profile-dropdown show">
+              <a class="list-group-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">
+                <span class="sidebar-list-icon company-icon"
+                  style="background-image: url(assets/images/company-gray.png);"></span> Company Profile
+                <span class="down-arrow">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </a>
+
+              <div class="dropdown-menu profile-dropdown-menu">
+                <a class="dropdown-item" href="edit-company-profile.html">Edit Profile</a>
+                <a class="dropdown-item" href="company-user.html">Users</a>
+                <a class="dropdown-item" href="company-properties.html">Properties</a>
+                <a class="dropdown-item" href="company-setting.html">Company Settings</a>
+              </div>
+            </div>
+          </li>
+          <hr>
+        </ul>
+        <div class="sidebar-bottom">
+          <ul class="sidebar-bottom-menu">
+            <li>
+              <a href="#" class="fixed-sidebar-menu">
+                Properties <span class="add-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
+              </a>
+              <ul class="sidebar-bottom-submenu">
+                <li><a href="pearl-plaza.html">Pearl Plaza</a></li>
+                <li><a href="#">Property B</a></li>
+                <li><a href="#">Property Delta</a></li>
+                <li><a href="#">Property Gamma</a></li>
+                <li><a href="#">Property Sigma</a></li>
+                <li><a href="#">Property T</a></li>
+                <li><a href="#">Property U</a></li>
+                <li><a href="#">Property V</a></li>
+                <li><a href="#">Property W1</a></li>
+                <li><a href="#">Property W2</a></li>
+                <li><a href="#">Property W3</a></li>
+                <li><a href="#">Property W4</a></li>
+                <li><a href="#">Property W5</a></li>
+                <li><a href="#">Property W6</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #sidebar-wrapper -->
+    </div>
+
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div id="main-wrapper">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="edit-form">
+              <form>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Name</label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Raunak">
+                  </div>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" value="Agarwal">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Address</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" value="711-2880 Nulla St. Mankato">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" value="raunak.clix@gmail.com">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Contact Number</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" value="1234567890">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">ZIP</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" value="31320">
+                    <small>Should be of the format 12345 or 12345-1234</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Image</label>
+                  <div class="col-sm-6">
+                    <div class="uploader-wrap">
+                      <input type="file" class="form-control-file">
+                      <span class="file-group-btn"><i class="fa fa-trash-o" aria-hidden="true"></i></span>
+                    </div>
+                    <small>For best viewing, image dimension should be 750×750</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-sm-3 col-form-label">Is this for business or personal use?</label>
+                  <div class="col-sm-6">
+                    <div class="select-wrap">
+                      <select class="form-control">
+                        <option>Business</option>
+                        <option>Personal</option>
+                      </select>
+                      <span class="select-group-btn"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group row add-border">
+                  <label class="col-sm-3 col-form-label">Email Notification</label>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" checked="">
+                      <label class="form-check-label">Get deals and promotions right on your inbox!</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <button class="button btn-blue save-btn">Save</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="main-wrapper">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="action-wrapper">
+              <ul>
+                <li>
+                  <a href="#" class="change-pwd" data-toggle="modal" data-target="#chng-pwd-modal"><i class="fa fa-key"
+                      aria-hidden="true"></i> Change password</a>
+                </li>
+                <li>
+                  <a href="#" class="logout"><i class="fa fa-sign-in" aria-hidden="true"></i> Log out</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <div class="modal fade" id="chng-pwd-modal" tabindex="-1" role="dialog" aria-labelledby="chng-pwd-modalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chng-pwd-modalLabel">Change Password</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="form-group">
+              <label>New Password</label>
+              <input type="password" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Re-enter new password</label>
+              <input type="password" class="form-control">
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="button btn-white cancel-btn" data-dismiss="modal">Cancel</button>
+          <button type="button" class="button btn-blue save-btn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -16,12 +16,48 @@
     <title>Dashboard</title>
   </head>
   <body>
-    
+    <div id="overlay"></div>
     <div class="d-flex" id="wrapper">
-
+      <div class="top-side-wrap">
+        <!-- top-header-start-->
+        <div class="site-header">
+          <nav class="navbar navbar-expand-lg">
+            <div class="navbar-content-left">
+              <button class="navbar-toggler" type="button" id="menu-toggle"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </span>
+              </button>
+              <h2 class="heading-left">Edit Profile</h2>
+            </div>
+              
+      
+              <div class="navbar-content-right"> 
+                <ul class="navbar-nav ml-auto mt-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-user" aria-hidden="true"></i> Lindsay Harrington 
+                      <span class="down-arrow">
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Settings</a>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+        <!-- top-header-ends-->
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-          <div class="sidebar-header"><img src="assets/images/logo.png" alt="logo" /></div>
+        <div id="sidebar-wrapper" style="display: none;">
+          <div class="sidebar-header">
+            <img src="assets/images/logo.png" alt="logo" />
+          </div>
           <ul class="list-group">
             <li>
                 <a href="index.html" class="list-group-item">
@@ -29,7 +65,7 @@
                 </a>
             </li>
             <li>
-                <div class="dropdown show">
+                <div class="dropdown profile-dropdown show">
                     <a class="list-group-item active dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         <span class="sidebar-list-icon company-icon" style="background-image: url(assets/images/company-gray.png);"></span> Company Profile 
                         <span class="down-arrow">
@@ -37,11 +73,11 @@
                         </span>
                     </a>
                   
-                    <div class="dropdown-menu show">
+                    <div class="dropdown-menu profile-dropdown-menu show">
                       <a class="dropdown-item active" href="edit-company-profile.html">Edit Profile</a>
-                      <a class="dropdown-item" href="#">Users</a>
-                      <a class="dropdown-item" href="#">Properties</a>
-                      <a class="dropdown-item" href="#">Company Settings</a>
+                      <a class="dropdown-item" href="company-user.html">Users</a>
+                      <a class="dropdown-item" href="company-properties.html">Properties</a>
+                      <a class="dropdown-item" href="company-setting.html">Company Settings</a>
                     </div>
                   </div>
             </li> 
@@ -50,8 +86,8 @@
           <div class="sidebar-bottom">
               <ul class="sidebar-bottom-menu">
                   <li>
-                    <a href="#">
-                        Properties <span class="add-icon"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+                    <a href="#" class="fixed-sidebar-menu">
+                        Properties <span class="add-icon"><i class="fa fa-plus" aria-hidden="true"></i></span>
                     </a>
                     <ul class="sidebar-bottom-submenu">
                         <li><a href="pearl-plaza.html">Pearl Plaza</a></li>
@@ -59,41 +95,25 @@
                         <li><a href="#">Property Delta</a></li>
                         <li><a href="#">Property Gamma</a></li>
                         <li><a href="#">Property Sigma</a></li>
+                        <li><a href="#">Property T</a></li>
+                        <li><a href="#">Property U</a></li>
+                        <li><a href="#">Property V</a></li>
+                        <li><a href="#">Property W1</a></li>
+                        <li><a href="#">Property W2</a></li>
+                        <li><a href="#">Property W3</a></li>
+                        <li><a href="#">Property W4</a></li>
+                        <li><a href="#">Property W5</a></li>
+                        <li><a href="#">Property W6</a></li>
                     </ul>
                   </li>
               </ul>
           </div>
         </div>
         <!-- #sidebar-wrapper -->
+      </div>
     
         <!-- Page Content -->
         <div id="page-content-wrapper">
-          <div class="site-header">
-            <nav class="navbar navbar-expand-lg">
-                <h2 class="heading-left">Edit Profile</h2>
-                <button class="navbar-toggler" type="button" id="menu-toggle"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon">☰</span>
-                </button>
-        
-                <div class="collapse navbar-collapse"> 
-                  <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user" aria-hidden="true"></i> Lindsay Harrington 
-                        <span class="down-arrow">
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </span>
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#">Settings</a>
-                        <a class="dropdown-item" href="#">Logout</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-          </div>
-          
           <div id="main-wrapper">
               <div class="row">
                   <div class="col-md-12">
@@ -167,11 +187,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#wrapper").toggleClass("toggled");
-        });
-      </script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
   </body>
 </html>
